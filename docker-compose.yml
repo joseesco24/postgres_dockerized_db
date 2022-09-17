@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  dockerized_database:
+    container_name: dockerized_database
+    image: joseesco24/dockerized_database
+    build:
+      dockerfile: Dockerfile
+      context: .
+    networks:
+      - dockerized_database_network
+    ports:
+      - target: 5432
+        published: 5434
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: dockerized_database_disc
+        target: /var/lib/postgresql/data
+
+networks:
+  dockerized_database_network:
+    name: dockerized_database_network
+    external: false
+    driver: bridge
+
+volumes:
+  dockerized_database_disc:

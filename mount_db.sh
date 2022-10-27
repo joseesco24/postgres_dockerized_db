@@ -3,7 +3,7 @@
 # Schema 1.
 
 # Postgres (root)
-FILE=/home/build/schema_1/postgres/install/0.install.sql
+FILE=/home/build/schema_1/postgres/install/0_install.sql
 echo "ejecutando el script $FILE"
 if test -f "$FILE"; then
     echo "script $FILE encontrado"
@@ -13,7 +13,7 @@ else
 fi
 
 # Objects Owner
-FILE=/home/build/schema_1/schema_1_owner/install/0.install.sql
+FILE=/home/build/schema_1/schema_1_owner/install/0_install.sql
 echo "ejecutando el script $FILE"
 if test -f "$FILE"; then
     echo "script $FILE encontrado"
@@ -23,7 +23,7 @@ else
 fi
 
 # Develop population
-FILE=/home/build/schema_1/schema_1_user/install/0.install.sql
+FILE=/home/build/schema_1/schema_1_user/install/0_install.sql
 echo "ejecutando el script $FILE"
 if test -f "$FILE"; then
     echo "script $FILE encontrado"
@@ -35,7 +35,7 @@ fi
 # Schema 2.
 
 # Postgres (root)
-FILE=/home/build/schema_2/postgres/install/0.install.sql
+FILE=/home/build/schema_2/postgres/install/0_install.sql
 echo "ejecutando el script $FILE"
 if test -f "$FILE"; then
     echo "script $FILE encontrado"
@@ -45,7 +45,7 @@ else
 fi
 
 # Objects Owner
-FILE=/home/build/schema_2/schema_2_owner/install/0.install.sql
+FILE=/home/build/schema_2/schema_2_owner/install/0_install.sql
 echo "ejecutando el script $FILE"
 if test -f "$FILE"; then
     echo "script $FILE encontrado"
@@ -55,7 +55,7 @@ else
 fi
 
 # Develop population
-FILE=/home/build/schema_2/schema_2_user/install/0.install.sql
+FILE=/home/build/schema_2/schema_2_user/install/0_install.sql
 echo "ejecutando el script $FILE"
 if test -f "$FILE"; then
     echo "script $FILE encontrado"

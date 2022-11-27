@@ -3,7 +3,7 @@ version: "3.8"
 services:
   dockerized_database:
     container_name: dockerized_database
-    image: joseesco24/dockerized_database
+    image: ghcr.io/joseesco24/postgres_users_db:latest
     build:
       dockerfile: Dockerfile
       context: .

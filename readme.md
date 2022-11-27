@@ -29,7 +29,7 @@ docker login -u joseesco24 -p < authentication token > ghcr.io
 ### Docker Push The Image To GitHub Container Registry
 
 ```bash
-docker push ghcr.io/joseesco24/users_crud_api_rust:latest
+docker push ghcr.io/joseesco24/postgres_users_db:latest
 ```
 
 <br/>

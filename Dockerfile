@@ -1,4 +1,4 @@
-FROM postgres:latest
+FROM postgres:15.1
 
 ENV POSTGRES_DB=users_db
 ENV POSTGRES_PASSWORD=postgres

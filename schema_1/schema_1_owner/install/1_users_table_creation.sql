@@ -10,4 +10,5 @@ create table users (
 	creation timestamp with time zone,
 	modification timestamp with time zone,
 	password varchar(64)
-);
+) partition by range (creation);
+create table users_def partition of users default;

@@ -1,0 +1,1 @@
+create index on schema_2.users (creation);

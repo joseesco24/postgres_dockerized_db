@@ -13,13 +13,19 @@ A really simple postgres users dockerized DB that is easy to modify and use to m
 ### Docker Build Image Using Compose File
 
 ```bash
-docker-compose build
+docker-compose -f compose.project.yaml build
 ```
 
 ### Docker Start Service Using Compose File
 
 ```bash
-docker-compose up
+docker-compose -f compose.project.yaml up
+```
+
+### Docker Stop Service Using Compose File
+
+```bash
+docker-compose -f compose.project.yaml down
 ```
 
 ### Docker Login Into GitHub Container Registry

@@ -16,7 +16,7 @@ RUN mkdir -p $WORKDIR
 COPY ["schema_1", "$WORKDIR/schema_1/"]
 COPY ["schema_2", "$WORKDIR/schema_2/"]
 
-# ** info: copying the shell install script from the building context to the working directory
+# ** info: copying the shell install script from the building context to the initdb folder
 COPY ["mount_db.sh", "/docker-entrypoint-initdb.d/"]
 
 # ** info: converting the shell script to unix formatt

@@ -1,8 +1,10 @@
 #!/bin/bash
 
-# Schema 1.
+# ---------------------------------------------------------------------------------------------------------------------
+# ** info: schema 1 installation
+# ---------------------------------------------------------------------------------------------------------------------
 
-# Postgres (root)
+# ** info: installations using postgres/root user
 FILE=/home/build/schema_1/postgres/install/0_install.sql
 echo "ejecutando el script $FILE"
 if test -f "$FILE"; then
@@ -12,7 +14,7 @@ else
     echo "script $FILE no encontrado"
 fi
 
-# Objects Owner
+# ** info: installations using schema 1 owner user
 FILE=/home/build/schema_1/schema_1_owner/install/0_install.sql
 echo "ejecutando el script $FILE"
 if test -f "$FILE"; then
@@ -22,7 +24,7 @@ else
     echo "script $FILE no encontrado"
 fi
 
-# Develop population
+# ** info: installations using schema 1 user
 FILE=/home/build/schema_1/schema_1_user/install/0_install.sql
 echo "ejecutando el script $FILE"
 if test -f "$FILE"; then
@@ -32,9 +34,11 @@ else
     echo "script $FILE no encontrado"
 fi
 
-# Schema 2.
+# ---------------------------------------------------------------------------------------------------------------------
+# ** info: schema 2 installation
+# ---------------------------------------------------------------------------------------------------------------------
 
-# Postgres (root)
+# ** info: installations using postgres/root user
 FILE=/home/build/schema_2/postgres/install/0_install.sql
 echo "ejecutando el script $FILE"
 if test -f "$FILE"; then
@@ -44,7 +48,7 @@ else
     echo "script $FILE no encontrado"
 fi
 
-# Objects Owner
+# ** info: installations using schema 2 owner user
 FILE=/home/build/schema_2/schema_2_owner/install/0_install.sql
 echo "ejecutando el script $FILE"
 if test -f "$FILE"; then
@@ -54,7 +58,7 @@ else
     echo "script $FILE no encontrado"
 fi
 
-# Develop population
+# ** info: installations using schema 2 user
 FILE=/home/build/schema_2/schema_2_user/install/0_install.sql
 echo "ejecutando el script $FILE"
 if test -f "$FILE"; then

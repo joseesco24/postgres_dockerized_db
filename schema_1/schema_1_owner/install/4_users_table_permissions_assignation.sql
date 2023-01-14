@@ -1,0 +1,1 @@
+grant select, update on schema_1.users to schema_1_user;

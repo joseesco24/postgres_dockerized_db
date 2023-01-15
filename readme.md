@@ -26,7 +26,7 @@ docker push ghcr.io/joseesco24/postgres_users_db:latest
 
 ## Docker Compose Project Commands
 
-**Note:** Before running any of these commands be sure that your **CWD** is **users_crud_api_python** directory.
+**Note:** Before running any of these commands be sure that your **CWD** is **postgres_users_db** directory.
 
 ### Docker Compose Build Image Using Compose File
 

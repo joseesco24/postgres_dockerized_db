@@ -1,5 +1,5 @@
 create table
-    schema_1.users (
+    users (
         internal_id varchar(40),
         estatal_id bigint,
         first_name varchar(50),
@@ -17,4 +17,4 @@ create table
             password varchar(64),
             primary key(internal_id),
             unique (estatal_id)
-    )
+    );

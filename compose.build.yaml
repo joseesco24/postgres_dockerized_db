@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  postgres_users_db:
+    image: ghcr.io/joseesco24/postgres_users_db:latest
+    build:
+      dockerfile: Dockerfile
+      context: .

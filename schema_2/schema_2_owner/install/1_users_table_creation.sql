@@ -1,7 +1,7 @@
 create table
     users (
-        internal_id varchar(40),
-        estatal_id bigint,
+        internal_id varchar(40) primary key,
+        estatal_id bigint unique,
         first_name varchar(50),
         last_name varchar(50),
         phone_number bigint,

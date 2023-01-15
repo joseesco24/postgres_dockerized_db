@@ -14,7 +14,7 @@ create table
             modification timestamp
         with
             time zone,
-            password varchar(64)
-    ) partition by range (creation);
-
-create table users_def partition of users default;
+            password varchar(64),
+            primary key(internal_id),
+            unique (estatal_id)
+    );

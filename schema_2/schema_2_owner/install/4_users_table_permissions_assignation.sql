@@ -1,1 +1,1 @@
-grant select, update on schema_2.users to schema_2_user;
+grant select, insert, update on schema_2.users to schema_2_user;

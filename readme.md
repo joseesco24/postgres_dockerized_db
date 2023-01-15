@@ -10,24 +10,6 @@ A really simple postgres users dockerized DB that is easy to modify and use to m
 
 **Note:** Before running any of these commands be sure that your **CWD** is **postgres_users_db** directory.
 
-### Docker Build Image Using Compose File
-
-```bash
-docker-compose -f compose.project.yml build
-```
-
-### Docker Start Service Using Compose File
-
-```bash
-docker-compose -f compose.project.yml up
-```
-
-### Docker Stop Service Using Compose File
-
-```bash
-docker-compose -f compose.project.yml down
-```
-
 ### Docker Login Into GitHub Container Registry
 
 ```bash
@@ -38,6 +20,18 @@ docker login -u joseesco24 -p < authentication token > ghcr.io
 
 ```bash
 docker push ghcr.io/joseesco24/postgres_users_db:latest
+```
+
+<br/>
+
+## Docker Compose Project Commands
+
+**Note:** Before running any of these commands be sure that your **CWD** is **users_crud_api_python** directory.
+
+### Docker Compose Build Image Using Compose File
+
+```bash
+docker-compose -f compose.build.yaml build
 ```
 
 <br/>

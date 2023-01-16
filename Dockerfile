@@ -1,6 +1,8 @@
 # ---------------------------------------------------------------------------------------------------------------------
-# ** info: declaration of the image base version
+# ** stage 1: production image
 # ---------------------------------------------------------------------------------------------------------------------
+
+# ** info: declaration of the image base version
 FROM postgres:15.1
 
 # ** info: declaration of the image env variables

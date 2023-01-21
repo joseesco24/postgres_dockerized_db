@@ -4,7 +4,7 @@
 # ** info: moving custom postgresql.conf file
 # ---------------------------------------------------------------------------------------------------------------------
 
-cp --force postgresql.conf /var/lib/postgresql/data/
+# cp --force postgresql.conf /var/lib/postgresql/data/
 
 # ---------------------------------------------------------------------------------------------------------------------
 # ** info: schema 1 installation

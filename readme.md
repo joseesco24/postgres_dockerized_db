@@ -16,6 +16,12 @@ A really simple postgres users dockerized DB that is easy to modify and use to m
 docker login -u joseesco24 -p < authentication token > ghcr.io
 ```
 
+### Docker Access To The Container Terminal
+
+```bash
+docker exec -it postgres_users_db /bin/bash
+```
+
 ### Docker Push The Image To GitHub Container Registry
 
 ```bash

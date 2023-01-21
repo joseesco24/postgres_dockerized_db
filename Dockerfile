@@ -20,7 +20,7 @@ RUN mkdir -p $WORKDIR
 COPY ["schema_1", "$WORKDIR/schema_1/"]
 COPY ["schema_2", "$WORKDIR/schema_2/"]
 
-# ** info: copying the redis config file from the building context to the initdb folder
+# ** info: copying the postgres config file from the building context to the initdb folder
 COPY ["postgresql.conf", "/"]
 
 # ** info: copying the shell install script from the building context to the initdb folder

@@ -1,6 +1,6 @@
 create table
     tv_programation (
-        programation_id serial,
+        programation_id varchar(40),
         channel_id integer not null,
         channel_name varchar(200) not null,
         channel_content_type varchar(200) not null,

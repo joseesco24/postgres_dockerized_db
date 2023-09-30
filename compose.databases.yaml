@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  postgres_users_db:
+    container_name: postgres_users_db
+    image: ghcr.io/joseesco24/postgres_users_db:latest
+    ports:
+      - target: 5432
+        published: 5434
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: postgres_users_db_disc
+        target: /var/lib/postgresql/data
+
+volumes:
+  postgres_users_db_disc:

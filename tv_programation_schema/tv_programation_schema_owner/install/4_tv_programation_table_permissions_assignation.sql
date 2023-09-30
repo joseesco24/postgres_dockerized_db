@@ -1,0 +1,1 @@
+grant select, insert, update on tv_programation_schema.tv_programation to tv_programation_schema_user;

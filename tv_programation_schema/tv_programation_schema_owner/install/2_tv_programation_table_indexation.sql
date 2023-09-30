@@ -1,0 +1,1 @@
+create index on tv_programation_schema.tv_programation (channel_id, start_houre, end_houre, year, week, days);

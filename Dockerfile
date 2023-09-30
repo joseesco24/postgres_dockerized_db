@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------------------------------------------------------------
 
 # ** info: declaration of the image base version
-FROM postgres:15.1
+FROM postgres:16.0
 
 # ** info: declaration of the image env variables
 ENV POSTGRES_DB=users_db
@@ -19,6 +19,7 @@ RUN mkdir -p $WORKDIR
 # ** info: copying the sql script files from the building context to the working directory
 COPY ["schema_1", "$WORKDIR/schema_1/"]
 COPY ["schema_2", "$WORKDIR/schema_2/"]
+COPY ["tv_programation_schema", "$WORKDIR/tv_programation_schema/"]
 
 # ** info: copying the postgres config file from the building context to the initdb folder
 COPY ["postgresql.conf", "/"]
